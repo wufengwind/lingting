@@ -3,13 +3,12 @@ from email.mime.text import MIMEText
 from email.header import Header
 import sys
 # 第三方 SMTP 服务
-mail_host="smtp.qq.com"
-mail_user="464243312@qq.com"
-mail_pass="uykgrhsapgjacaje"   #口令/授权码
+mail_host="邮箱服务器"
+mail_user="邮箱"
+mail_pass="授权码"   #口令/授权码
 
 
-sender = '464243312@qq.com'
-#receivers = ['13972138470@163.com']
+sender = '邮箱'
 a=sys.argv[1]
 b=sys.argv[2]
 message = MIMEText('密码:'+a, 'plain', 'utf-8')
