@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>忘记密码？</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	input[type=submit]{
+		width: 200px;
+			height: 40px;
+			border-width: 0px;
+			border-radius: 3px;
+			background: #1E90FF;
+			cursor: pointer;
+			outline: none;
+			color: white;
+			font-size: 20px;
+			margin: 20px 10px 10px;
+			text-align: center;
+	}
+	input[type=text]{
+		margin: 20px 10px 10px;
+	}
+	</style>
+</head>
+<body>
+<h1>找回密码</h1>
+<form action="seekPwd.php" method="post">
+<table align="center">
+<tr>
+<td>输入注册邮箱：</td>
+	<td colspan="3"><input type="text" name="Email" ></td>
+</tr>
+<!--tr>
+<td>验证码:</td>
+	<td><input type="text" name="num" />
+</tr>
+<tr-->
+	<td colspan="3"><input type="submit" value="找回" align="center" />
+	</td>
+</tr>	
+</table>
+</form>
+</body>
+</html>
