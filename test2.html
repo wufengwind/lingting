@@ -1,0 +1,24 @@
+<html>
+<head>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        var loc=location.href;
+        var n1=loc.length;
+        var n2=loc.indexOf("=");
+        var id=decodeURI(loc.substr(n2+1,n1-n2));
+        //alert(id)              ;
+        //document.getElementById("test").value=id;
+        //$("test").attr("value",id)    ;
+        $("#test").attr("value",id);                       ;
+    </script>
+    <body>
+
+
+<!--form action="test3.php" method="post"-->
+    <input type="text" id="test" value="" name="test">
+    <input type="submit" >
+<!--/form-->
+
+</body>
+</head>
+</html>
